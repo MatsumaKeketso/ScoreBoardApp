@@ -1,3 +1,121 @@
 page-home {
+  * {
+    transition: 0.5s;
 
+  }
+  //panel contains button and information
+.panel{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 5;;
+  .show{
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.568)),url(../../assets/imgs/about_bg.png);
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    h1{
+      font-family: Saturday Champagne Demo;
+      font-size: 60px;
+    }
+    h2{
+      letter-spacing: 10px;
+      padding-bottom: 20px;
+      font-family: Quicksand;
+      font-size: 35px;
+    }p{
+      font-family: Raleway;
+      font-size: 13px;
+    }
+    font{
+      text-align: left;
+    }
+    .sel{
+      width: 100%;
+      text-align: center;
+      select{
+        padding: 5px;
+        width: 100px;
+        border-radius: 200px;
+        color: rgb(255, 136, 0);
+        border: solid 1px rgb(255, 102, 0);
+        overflow: hidden;
+        text-align: center;
+        margin: auto;
+        background: none;
+      }
+    }
+  }
+  .about{
+    text-align: center;
+    button{
+      padding: 10px 20px;
+      width: 200px;
+      border-bottom-left-radius: 70px;
+      border-bottom-right-radius: 70px;
+    }
+  }
+}
+.about{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  width: 100vw;
+  button{
+    padding: 10px 20px;
+    width: 200px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+  }
+}
+  .hide{
+    height: 20vh;
+    transition: 0.5s;
+  }
+
+  .teams{
+    width: 100%;
+    height: 70vh;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    overflow: hidden;
+    .left{
+      width: 50%;
+      height: 100%;
+      float: left;
+    }
+    .right{
+      width: 50%;
+      height: 100%;
+      float: left;
+    }
+    .carousel-item{
+      height: 100%;
+      img{
+        width: 100vw;
+        height: 70vh;
+        object-fit: cover;
+      }
+    }
+  }
+  .sim{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    button{
+      width: 90%;
+      padding: 20px;
+      background: #FF7700;
+      color: white;
+      border-top-left-radius: 200px;
+      border-top-right-radius: 200px;
+    }
+  }
 }

@@ -1,0 +1,50 @@
+<ion-content>
+  <div class="container">
+    <div class="inner">
+      <div class="header div">
+        <h1>SCORE APP</h1>
+      </div>
+      <div class="score div">
+        <div>
+          <div class="h1">
+            <h1>{{teamA}}</h1>
+          </div>
+        </div>
+        <div id="smaller">
+          <h3>vs</h3>
+        </div>
+        <div>
+          <div class="h1">
+            <h1>{{teamB}}</h1>
+          </div>
+        </div>
+      </div>
+      <div class="names div">
+        <div>
+          <p>Miami Heat</p>
+        </div>
+        <div>
+          <p>Warriors</p>
+        </div>
+      </div>
+      <div class="buttons div">
+        <div>
+          <button (click)="addA(1)">+1</button>
+          <button (click)="addA(2)">+2</button>
+          <button (click)="addA(3)">+3</button>
+        </div>
+        <div>
+          <button (click)="addB(1)">+1</button>
+          <button (click)="addB(2)">+2</button>
+          <button (click)="addB(3)">+3</button>
+        </div>
+      </div>
+      <div class="goback div">
+        <button  (click)="goback()">Go Back</button>
+      </div>
+      <div class="footer div">
+        <button (click)="reset()">Reset Score</button>
+      </div>
+    </div>
+  </div>
+</ion-content>

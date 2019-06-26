@@ -1,14 +1,74 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content>
+  <!-- details panel -->
+  <div class="panel">
+    <!-- information ares -->
+    <div [class]="className" class="container div">
+      <h1>Basketbal</h1>
+      <h2>SCORE APP</h2>
+      <span>
+        <font size="{{text}}">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum justo eros, luctus non aliquet at,
+              ultricies nec nisl. Etiam non rutrum est. Donec ac imperdiet mi, vel malesuada ex. Suspendisse efficitur eros
+              nulla, ut bibendum nibh porta id. Vestibulum lorem dolor, varius non dolor nec, vulputate vulputate felis.
+              Morbi iaculis ac libero in malesuada. Nam cursus ante et ante vulputate semper. Aliquam in nisl id lectus
+              rhoncus scelerisque eget ac elit.
+        </font>
+      </span> <br>
+        <div class="sel">
+            <select [(ngModel)]="text">
+                  <option (click)="setTextS(2)">2</option>
+                  <option (click)="setTextS(4)">4</option>
+                  <option (click)="setTextS(6)">6</option>
+              </select>
+        </div>
+        <div class="icons">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+    </div>
+    <!-- about button -->
+    <div class="about div">
+      <button (click)="toggleClass()">About</button>
+    </div>
+  </div>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <div class="teams">
+    <div class="left">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../../assets/imgs/miami/10001309-nba-miami-heat-at-washington-wizards.jpeg" alt="Los Angeles">
+          </div>
+          <div class="carousel-item">
+            <img src="../../assets/imgs/miami/11953669.jpg" alt="Chicago">
+          </div>
+          <div class="carousel-item">
+            <img src="../../assets/imgs/miami/56-564713_miami-heat-logo-png-miami-heat-nba-logo.jpg" alt="New York">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../../assets/imgs/warriors/10057804-nba-playoffs-san-antonio-spurs-at-golden-state-warriors.jpeg" alt="Los Angeles">
+              </div>
+              <div class="carousel-item">
+                <img src="../../assets/imgs/warriors/105260115-Steph_Curry.jpg" alt="Chicago">
+              </div>
+              <div class="carousel-item">
+                <img src="../../assets/imgs/warriors/golden-state-warriors-wallpapers-31094-5775907.jpg" alt="New York">
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+  <div class="sim">
+      <button (click)="toScore()">Go to Simulation</button>
+  </div>
 </ion-content>
